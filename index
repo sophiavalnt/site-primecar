@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+    <title>Primecar - Centro automotivo</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo"></div>
+      <nav class="main-nav">
+        <ul>
+          <li>Início</li>
+          <li>Sobre</li>
+          <li>Serviços</li>
+          <li>Dicas</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    	<section class="banner">
+    		<h1>Bem-vindo á Primecar</h1>
+    		<p>O melhor cuidado para o seu carro em Monte Alto e região</p>
+    	</section>
+    </main>
+  </body>
+  </html>

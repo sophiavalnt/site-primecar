@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+    <title>Primecar - Centro automotivo</title>
+
+    <!-- FOLHAS DE ESTILO -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"&gt; <!-- Biblioteca de ícones (Facebook, Instagram, etc.) --> <!-- BIBILIOTECA DE ICONS - FACEBOOK INSTA E X-->
+
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+      <nav class="main-nav">
+        <ul>
+        <a href="index.html"> <li>Início</li> </a>
+         <a href="sobre.html"> <li>Sobre</li> </a>
+         <a href="servicos.html"> <li>Serviços</li> </a>
+         <a href="dicas.html"> <li>Dicas</li> </a>
+         <a href="contato.html"> <li>Contato</li> </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+       <section class="banner">
+        <div class="banner-overlay"></div>  <!-- Sobreposição escura por cima da imagem -->
+        <div class="banner-content">
+           <h1>Entre em contato</h1>
+         <p>Ficou com alguma dúvida ou quer agendar um serviço? Fale conosco, será um prazer atende-lo!</p>
+        </div>
+       </section>
+       <!--SEÇÃO PRINCIPAL DA PÁGINA CONTATO-->
+       <section class="contato">
+         <!--BLOCO DE INFORMAÇÕES E MAPA-->
+         <div class="contato-info">
+           <!--TEXTO COM ENDEREÇO E INFORMAÇÕES-->
+           <div class="contato-texto">
+             <h3>ENDEREÇO</h3>
+             <p>
+               <strong>Matriz:</strong> Av Presidente Vargas nº 2335 <br>
+               Jardim Sumaré - Monte Alto/SP <br>
+               <strong>Telefone:</strong>(16) 3599-0065 <br>
+               <strong>Whatsapp:</strong> <a href="https://wa.me/5516976543210"> (16) 97654-3210 </a> <br>
+               <strong>E-mail:</strong> contato@primecar.com.br
+             </p>
+             <!--MAPA DO GOOGLE MAPS INCORPORADO-->
+             <div class="contato-mapa">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14291.809651965357!2d-48.49410683303131!3d-21.26377191897359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b946a0d67e47d1%3A0xf3e1b55ad50b293c!2sCentro%2C%20Monte%20Alto%20-%20SP%2C%2015910-000!5e1!3m2!1spt-BR!2sbr!4v1759835533305!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+           </div>
+         </div>
+         <!--FORMULÁRIO DE CONTATO-->
+         <div class="formulario-contato">
+           <h3>Envie a sua mensagem</h3>
+           <!--INICIO DO FORMULARIO DE CONTATO-->
+           <form action="#" method=""> 
+
+
+            <!----
+            ' ACTION : destino de envio das informações do formulário ; ' METHOD : A forma de envio das informações podem ser GET ou POST.
+
+            GET :  Envia as informações pela URL. Os valores ficam visiveis na barra de endereços, usado em formulários de pesquisa, filtro de produtos ou páginas de listagem como por exemplo "buscar carros por modelo." 
+
+
+            POST : Envia as informações por dentro do corpo de requisitação, não aparecendo na barra de endereço URL. Usado em formulários de contatto, login, cadastro e etc.
+            ----->
+             
+           </form>
+
+
+            <!--Grupo de campo para nome-->
+
+            <div class="form-grupo"> 
+               <label for="nome">Nome:</label>
+               <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required="">
+            </div>
+
+             <!--Grupo de campo para E-mail-->
+
+            <div class="form-grupo"></div>
+             <label for="email">E-mail:</label>
+             <input type="email" name="email" id="email" placeholder="Exemplo: nome@gmail.com" required="">
+            </div>
+
+            <!--Campo de mensagem-->
+
+            <div class="form-grupo"></div>
+             <label for="mensagem">Mensagem::</label>
+             <textarea id="mensagem" name="Mensagem" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+
+            <!--Botão de envio-->
+
+             <button type="reset" class="btn-reset">Limpar</button>
+             <button type="submit" class="btn-enviar">Enviar</button>
+            
+       </section>
+    </main>
+   <footer class="rodape"> <!-- INICIO DO RODAPÉ DO SITE -->
+
+    <div class="rodape-container"> <!-- CONTAIR DO RODAPÉ PARA ORGANIZAÇÃO -->
+
+       <!-- COLUNA 1 - NAVEGUE -->
+       <div>
+           <h3>Navegue</h3>
+           <ul>
+             <a href="index.html"><li>Início</li></a>
+             <a href="sobre.html"><li>Sobre</li></a>
+             <a href="serviços.html"><li>Serviços</li></a>
+             <a href="dicas.html"><li>Dicas</li></a>
+             <a href="contato.html"><li>Contato</li></a>
+           </ul>
+       </div> <!-- FECHA COLUNA 1 -->
+
+       <!-- COLUNA 2 - CONTATO -->
+       <div>
+           <h3>Contato</h3>
+           <ul>
+             <li>Tel (16) 99123-4567</li>
+             <li>Nhonho do livramento 2555 - Monte Alto/SP</li>
+             <a href="mailto:Contato@primecar.com.br"><li>Contato@primecar.com.br</li></a>
+           </ul>
+       </div> <!-- FECHA COLUNA 2 -->
+
+       <!-- COLUNA 3 - SOBRE -->
+       <div>
+           <h3>Sobre</h3>
+           <p>Somos especialistas em estética automotiva, com equipamentos modernos e qualificados</p>
+       </div> <!-- FECHA COLUNA 3 -->
+
+       <!-- COLUNA 4 - ACOMPANHA (REDES SOCIAIS) -->
+       <div>
+           <h3>Acompanhe</h3>
+           <div class="social-links">
+             <a href=""><i class="fa-brands fa-facebook"></i></a>
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+           </div>
+       </div> <!-- FECHA COLUNA 4 -->
+
+    </div> <!-- FINAL DO CONTAINER DO RODAPÉ-->
+
+    <p>&copy;2025 - Primecar - Todos os direitos revelados</p>
+   </footer> <!-- FIM DO RODAPÉ -->
+  </body>
+  </html>

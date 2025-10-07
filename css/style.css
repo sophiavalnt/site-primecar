@@ -1,0 +1,542 @@
+/* == FONTES UBUNTU E ROBOTO ==
+
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+  */
+
+
+
+/* ====== ESTILO GERAL ====== */
+
+body{
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+   color: #22222;
+   background-color: #fff;
+   line-height: 1.6;
+ }
+
+
+ h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ====== CABEÇALHO ====== */
+
+.main-header{
+  background-color: #222;
+  padding: 20px 40px; /* =Margem interna dos elementos= */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.logo img{
+  max-height: 50px; /* Define altura máxima da imagem */
+
+}
+
+
+/* == MENU DE NAVEGAÇÃO == */
+
+.main-nav ul{
+  list-style: none; /* remove as bolinhas de uma lista não ordenadas */
+  display: flex;
+  gap: 40px; /* Distância entre os itens do menu (li) */
+}
+
+.main-nav a{
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease; /* Aplica o efeito de transição ao "hover" */
+}
+
+.main-nav a:hover{  /* muda a cor das fontes de quando coloca o cursor em cima */
+  color: #f0c330;
+}
+
+
+/* == BANNER == */
+
+.banner{
+  position: relative; /* referencia para overlay e contéudo */
+  height: 550px; /* altura do banner */
+  background: url("../img/bg header.webp") no-repeat center center/cover;
+  display:  flex;
+  align-items: center; /* alinha os elementos no centro vertical */
+  justify-content: center; /* alinha os elementos no centro horizontal */
+  text-align: center;
+  color: #fff;
+}
+
+
+/* OVERLAY:
+    A FAIXA ESCURA QUE COBRE TODA A IMAGEM
+    CRIA CONTRASTE PARA O TEXTO DO BANNER FICAR LEGÍVEL
+
+*/
+
+.banner-overlay{
+  position: absolute;
+  background-color:  rgba(0, 0, 0, 0.6);
+  z-index: 1; /* Fica atras do texto */
+  top: 0;
+  left: 0;
+  width:  100%;
+  height: 100%;
+}
+
+/* CONTÊUDO DO BANNER
+- TEXTO Q APARECE EM CIMA DA FAIXA ESCURA
+
+ */
+
+.banner-content{
+ z-index: 2;
+ padding: 20px;
+ max-width: 800px;
+ position: relative;
+}
+
+.banner-content h1{
+   font-size: 2.8rem;
+   margin-bottom: 15px;
+}
+
+.banner-content p{
+  font-size: 1.6rem;
+}
+
+
+/* ==================
+    SEÇÃO DE DESTAQUES
+  ==================
+    - AQUI FICAM OS ARTIGOS COM NOTICIAS E DICAS
+    - USAMOS O "GRID" PARA ORGANIZAR OS CARDS DE FORMA AUTOMATICA
+*/
+
+
+
+.destaques{
+  max-width: 1100px; /* APLICA UMA LARGURA MAXIMA À SESSÃO DESTAQUES */
+  margin: auto; /* CENTRALIZA A SESSÃO*/
+}
+
+.destaques h2{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.destaques .grid{
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     column-gap: 20px; /* espaço entre os cards */
+}
+
+.destaques article{
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding:  15px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.destaques article:hover{
+  transform: translateY(-5px);
+
+}
+
+.destaques img{
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+.destaques h3{
+  font-size: 1.4rem;
+  color: #0a2342;
+  margin-bottom: 10px;
+}
+
+
+.destaques p{
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ==================
+    SEÇÃO DO RODAPE
+  ==================
+    - A PARTE FINAL DO SITE
+    - USAMOS O "GRID" PARA DIVIDIR AS COLUNAS DENTRO DO FOOTER;
+    - NAVEGUE - CONTATO - SOBRE- REDES SOCIAIS ;
+*/
+
+/*=================================================
+
+#- chamar a ID
+	oque é? ELEMENTO DE FORMATAÇÃO ÚNICA NA PÁGINA
+.- chamar a CLASS
+	oque é? ELEMENTO DE FORMATAÇÃO REPETIDA NA PÁGINA
+
+====================================================*/
+
+.rodape {
+	background-color: #0a2342;
+	color: #fff;
+	width: 100%;
+
+
+}
+
+.rodape .rodape-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px,  1fr));
+	gap: 30px;
+	text-align: center;
+	justify-content: center;
+	align-items: start;
+}
+
+.rodape h3{
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	color: #f0c330;
+}
+
+.rodape ul{
+	list-style: none;
+	padding: 0;
+
+}
+
+.rodape ul li{
+	margin-bottom: 8px;
+	font-size: 0.9rem;
+
+}
+
+.rodape a{
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.rodape a:hover{
+	color: #f0c330;
+	transition: 0.3s;
+	font-weight: 500;
+
+
+}
+
+/*LINKS SOCIAIS*/
+
+.rodape .social-links{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.rodape .social-links a{
+	color: #fff;
+	font-size: 1.5rem;
+	transition: color 0.3s;
+}
+
+.rodape .social-links a:hover{
+	color: #f0c330;
+}
+
+.social-links i{
+	font-size: 1.6rem;
+}
+
+/*CRÉDITOS FINAIS*/
+
+.rodape .rodape-container p{
+	grid-column: 1/-1;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 0.85rem;
+	color: #ccc;
+}
+
+/*=== SEÇÃO SOBRE ===*/
+.sobre{
+	max-width: 1200px;
+	margin: 60px auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+/*layout em 3 colunas  para os textos*/
+
+.sobre-blocos{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+
+}
+.sobre-texto{
+	flex: 1;
+	min-width: 280px;
+	max-width: 350px;
+}
+
+.sobre-texto h2{
+	color: #0a2342;
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+}
+
+.sobre-texto p, .sobre-texto ul{
+	font-size: 1.1rem;
+	color: #333;
+	line-height: 2rem;
+	text-align: left;
+
+}
+
+/*Estilo da lista*/
+.sobre-texto ul{
+	list-style: square;
+	padding-left: 20px;
+}
+
+/*Bloco de imagens*/
+
+.sobre-imagens{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+
+}
+
+.sobre-imagens img{
+	width: 30%;
+	min-width: 250px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/*===PAGINAS DE SERVIÇOS===*/
+
+
+
+.servicos{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 20px;
+	text-align: center;
+
+}
+
+.servicos-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.servicos-grid article{
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+	transition: transform 0.4s ease;
+}
+
+.servicos-grid article:hover{
+	transform: scale(1.05);
+
+}
+
+/*IMAGENS*/
+
+.servicos-grid img{
+  width: 100%;
+  display: block;
+}
+
+.servicos-grid h3{
+  font-size: 1.2rem;
+  color: #222;
+  margin: 15px 0;
+}
+
+
+
+/*===INICIO DA PÁGINAS DICAS====*/
+
+.dicas-grupo {
+    max-width: 1000px;        
+    margin: 40px auto;       
+    padding: 0 20px;         
+    text-align: left;         
+    color: #1a2a4d;              
+    line-height: 1.6;         
+}
+
+.dicas-grupo h2 {
+    font-size: 28px;           
+    margin-bottom: 15px;       
+    color: #111;              
+}
+
+.dicas-grupo p {
+    font-size: 16px;          
+    margin-bottom: 25px;      
+}
+
+@media screen and (max-width: 768px) {
+    .dicas-grupo h2 {
+        font-size: 24px;       
+    }
+
+    .dicas-grupo p {
+        font-size: 15px;       
+    }
+}
+
+
+
+/*==================================*/
+
+
+
+.dicas {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.dicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dicas article {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 18px;
+  transition: 0.2s;
+}
+
+.dicas article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.dicas h3 {
+  color: #1a2a4d;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.dicas p {
+  color: #444;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+
+
+/*========que ver dar errado=========*/
+
+
+.dicass h1{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+
+}
+
+.dicass article{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.4s ease;
+
+}
+
+
+.dicass p{
+  
+}
